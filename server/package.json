@@ -1,0 +1,35 @@
+{
+  "name": "hadithihub-server",
+  "version": "1.0.0",
+  "description": "HadithiHub backend API",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node src/seeds/seed.js",
+    "seed:clear": "node src/seeds/seed.js --clear"
+  },
+  "dependencies": {
+    "@sentry/node": "^8.0.0",
+    "cloudinary": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-oauth2-jwt-bearer": "^1.5.0",
+    "express-rate-limit": "^7.0.0",
+    "express-validator": "^7.0.0",
+    "faker": "^5.5.3",
+    "helmet": "^7.0.0",
+    "mongoose": "^8.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "socket.io": "^4.6.1",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "nodemon": "^3.0.0"
+  }
+}

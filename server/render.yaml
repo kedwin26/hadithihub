@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: hadithihub-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false
+      - key: AUTH0_DOMAIN
+        sync: false
+      - key: AUTH0_AUDIENCE
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: SENTRY_DSN
+        sync: false
+      - key: SERVER_URL
+        sync: false
